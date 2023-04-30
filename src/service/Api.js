@@ -16,7 +16,7 @@ export const getTrendingMovies = async (page = 1) => {
 };
 export const getSearchMovies = async (searchQuery, page = 1) => {
   try {
-    const url = `3/search/movie?api_key=${userKey}&language=en-US&query=${searchQuery}&page=${page}&include_adult=false`;
+    const url = `3/search/movie?api_key=${userKey}&language=ru-US&query=${searchQuery}&page=${page}&include_adult=false`;
 
     const response = await axios.get(url);
 
@@ -27,7 +27,7 @@ export const getSearchMovies = async (searchQuery, page = 1) => {
 };
 export const getMoviesByID = async movieID => {
   try {
-    const url = `3/movie/${movieID}?api_key=${userKey}&language=ua-US`;
+    const url = `3/movie/${movieID}?api_key=${userKey}&language=ru-US`;
 
     const response = await axios.get(url);
 
@@ -39,7 +39,7 @@ export const getMoviesByID = async movieID => {
 
 export const getMovieCastByID = async movieID => {
   try {
-    const url = `3/movie/${movieID}/credits?api_key=${userKey}&language=en-US`;
+    const url = `3/movie/${movieID}/credits?api_key=${userKey}&language=ru-US`;
 
     const response = await axios.get(url);
 
@@ -51,7 +51,7 @@ export const getMovieCastByID = async movieID => {
 
 export const getMovieReviewsByID = async movieID => {
   try {
-    const url = `3/movie/${movieID}/reviews?api_key=${userKey}&language=en-US`;
+    const url = `3/movie/${movieID}/reviews?api_key=${userKey}&language=ru-US`;
 
     const response = await axios.get(url);
 
