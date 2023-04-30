@@ -27,7 +27,7 @@ export const getSearchMovies = async (searchQuery, page = 1) => {
 };
 export const getMoviesByID = async movieID => {
   try {
-    const url = `3/movie/${movieID}?api_key=${userKey}&language=en-UA`;
+    const url = `3/movie/${movieID}?api_key=${userKey}&language=ua-US`;
 
     const response = await axios.get(url);
 
