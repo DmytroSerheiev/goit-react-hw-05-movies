@@ -5,7 +5,7 @@ const userKey = '6fe1e9d5fbaeb01db6cc1b91ad7172fe';
 
 export const getTrendingMovies = async (page = 1) => {
   try {
-    const url = `3/trending/movie/day?api_key=${userKey}&page=${page}`;
+    const url = `3/trending/movie/day?api_key=${userKey}&language=ru-US&page=${page}`;
 
     const response = await axios.get(url);
 
